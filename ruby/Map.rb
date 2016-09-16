@@ -33,15 +33,3 @@ class Map
   end
 
 end
-
-map = Map.new
-map.assign("first", "mike")
-map.assign("favorite food", "pizza")
-map.assign("last", "hira")
-map.assign("favorite number", 5)
-map.assign("name", "bob")
-map.show
-map.lookup("first")
-map.lookup("last")
-map.remove("name")
-map.show

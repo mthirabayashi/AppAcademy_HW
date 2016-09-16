@@ -19,17 +19,3 @@ class Stack
     puts "The current stack is #{@stack}"
   end
 end
-
-s = Stack.new
-s.add(1)
-s.show
-s.add(2)
-s.show
-s.add(3)
-s.show
-s.add(4)
-s.show
-s.remove
-s.show
-s.remove
-s.show

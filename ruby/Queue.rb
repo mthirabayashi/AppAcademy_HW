@@ -20,19 +20,3 @@ class Queue
     puts "The current queue is #{@queue}"
   end
 end
-puts "\n\n"
-qu = Queue.new
-qu.enqueue(1)
-qu.show
-qu.enqueue(2)
-qu.show
-qu.enqueue(3)
-qu.show
-qu.enqueue(4)
-qu.show
-qu.dequeue
-qu.show
-qu.dequeue
-qu.show
-qu.dequeue
-qu.show
