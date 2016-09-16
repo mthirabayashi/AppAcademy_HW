@@ -1,2 +1,3 @@
 # AppAcademy_HW
-:cow2
+:ocean:
+:turtle:
