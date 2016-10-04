@@ -1,90 +1,122 @@
 <!DOCTYPE html>
 <html>
-    <head>
-      <title>Michael Hirabayashi Recipe</title>
-    </head>
-    <body>
-      <header>
-        Header?
-        <img src="https://course_report_production.s3.amazonaws.com/rich/rich_files/rich_files/2005/s300/logo-emblem-red-1000-1-.jpg"/>
-        <nav>
-          <ul>
-            <li>
-              <a href="#Description">Description</a>
-            </li>
-            <li>
-              <a href="#Ingredients">Ingredients</a>
-            </li>
-            <li>
-              <a href="#Required Stuff">Required Stuff</a>
-            </li>
-            <li>
-              <a href="#Directions">Directions</a>
-            </li>
-          </ul>
-        </nav>
-      </header>
-      <section>
-        <aside>
-          <h2>Ingredients</h2>
-          <a name="Ingredients"/>
-          <ul>
-            <li>
-              Rice
-            </li>
-            <li>
-              Water
-            </li>
-          </ul>
-        </aside>
-      </section>
-
-      <section>
-        <h1>Rice</h1>
-
-        <figure>
-          <img src="http://media2.onsugar.com/files/2014/03/25/070/n/1922195/62a96c30e6ba6fd2_shutterstock_43165990.jpg.xxxlarge_2x.jpg"/>
-          <figcaption>
-            <a href="https://en.wikipedia.org/wiki/Rice">Rice - Wiki</a>
-          </figcaption>
-        </figure>
-
-        <h2>Description</h2>
-        <a name="Description"></a>
-        <p>
-           A swamp grass that is widely cultivated as a source of food, especially in Asia.
-        </p>
-
-        <h2>Required Stuff</h2>
-        <a name="Required Stuff"/>
+  <head>
+    <title>Michael Hirabayashi Recipe</title>
+  </head>
+  <body>
+    <header>
+      Header?
+      <img src="https://course_report_production.s3.amazonaws.com/rich/rich_files/rich_files/2005/s300/logo-emblem-red-1000-1-.jpg"/>
+      <nav>
         <ul>
           <li>
-            Pot
+            <a href="#Description">Description</a>
           </li>
           <li>
-            Stove
+            <a href="#Ingredients">Ingredients</a>
+          </li>
+          <li>
+            <a href="#Required Stuff">Required Stuff</a>
+          </li>
+          <li>
+            <a href="#Directions">Directions</a>
           </li>
         </ul>
+      </nav>
+    </header>
+    <section>
+      <aside>
+        <h2>Ingredients</h2>
+        <a name="Ingredients"/>
+        <ul>
+          <li>
+            Rice
+          </li>
+          <li>
+            Water
+          </li>
+        </ul>
+      </aside>
+    </section>
 
-        <h2>Directions</h2>
-        <a name="Directions"/>
-        <ol>
-          <li>
-            Place however much rice you want to your pot
-          </li>
-          <li>
-            Add water to the pot until it covers the rice plus a little bit or until it looks kinda like enough water
-          </li>
-          <li>
-            Cook on high or some other temp until the water gets hot
-          </li>
-          <li>
-            Wait 2-100 minutes or until rice looks done
-          </li>
-        </ol>
-        <!-- This is a comment -->
-        <!-- recipe by michael hirabayashi -->
-      </section>
+    <section>
+      <h1>Rice</h1>
+
+      <figure>
+        <img src="http://media2.onsugar.com/files/2014/03/25/070/n/1922195/62a96c30e6ba6fd2_shutterstock_43165990.jpg.xxxlarge_2x.jpg"/>
+        <figcaption>
+          <a href="https://en.wikipedia.org/wiki/Rice">Rice - Wiki</a>
+        </figcaption>
+      </figure>
+
+      <h2>Description</h2>
+      <a name="Description"></a>
+      <p>
+         A swamp grass that is widely cultivated as a source of food, especially in Asia.
+      </p>
+
+      <h2>Required Stuff</h2>
+      <a name="Required Stuff"/>
+      <ul>
+        <li>
+          Pot
+        </li>
+        <li>
+          Stove
+        </li>
+      </ul>
+
+      <h2>Directions</h2>
+      <a name="Directions"/>
+      <ol>
+        <li>
+          Place however much rice you want to your pot
+        </li>
+        <li>
+          Add water to the pot until it covers the rice plus a little bit or until it looks kinda like enough water
+        </li>
+        <li>
+          Cook on high or some other temp until the water gets hot
+        </li>
+        <li>
+          Wait 2-100 minutes or until rice looks done
+        </li>
+      </ol>
+      <!-- This is a comment -->
+      <!-- recipe by michael hirabayashi -->
+    </section>
+
+    <section>
+      <h2>Reviews</h2>
+      <form action="/reviews", method="post">
+        <label for="name">Name:</label>
+        <input id="name" type="text" name="name">
+
+        <label for="rating">Rating</label>
+        1<input type="radio" name="rating" value="1" checked>
+        2<input type="radio" name="rating" value="2">
+        3<input type="radio" name="rating" value="3">
+        4<input type="radio" name="rating" value="4">
+        5<input type="radio" name="rating" value="5">
+
+        <label for="cooking_expertise">Cooking Expertise</label>
+        <select id="cooking_expertise" name="expertise">
+          <option value="Select Cooking Expertise" disabled="true" selected="true">Select Cooking Experise</option>
+          <option value="Sometimes Cook">Sometimes Cook</option>
+          <option value="Cook Everyday">Cook Everyday</option>
+          <option value="Cooking is a Hobby">Cooking is a Hobby</option>
+          <option value="Professional Chef">Professional Chef</option>
+        </select>
+
+        <label for="review">Review
+          <textarea>enter text here</textarea>
+        </label>
+
+        <input type="submit" value="Submit Review" />
+
+      </form>
+    </section>
+
     <footer>
       <p>
         Recipe by Michael Hirabayshi
